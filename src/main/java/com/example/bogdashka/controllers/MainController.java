@@ -27,9 +27,7 @@ public class MainController {
     public String getMainPage(Model model){
         List<DataModel> dataModel =  dataRepo.findAll();
         model.addAttribute("list", dataModel);
-        Cont cont = new Cont();
-        cont.setCount("7000");
-        countRepo.save(cont);
+
         return "transfer";
     }
     @PostMapping
