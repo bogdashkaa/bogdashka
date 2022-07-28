@@ -59,6 +59,7 @@ public class BuyController {
         dataModel = list.get(0);
 
         String str = dataModel.getCourse();
+        str = str.replaceAll(" ", "");
         char[] ch = str.toCharArray();
         int indRub= 0 , intRob = 0, intSign = 0;
         for (int i = 0; i < ch.length; i++) {
